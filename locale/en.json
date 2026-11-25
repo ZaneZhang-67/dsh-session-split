@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session split",
+    "description": "Drag Sessions from the Workspace browser to either Conversation edge to open two independently editable panes. Supports cross-Workspace Sessions, resizing and narrow-window restoration. Requires DSH 0.2.2-rc.5 and a full client reload after installation or upgrade; see README."
+  }
+}

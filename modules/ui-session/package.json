@@ -1,0 +1,26 @@
+{
+  "name": "@deepseek-ai/dsh-client-ui-session",
+  "version": "0.2.2-rc.5",
+  "private": true,
+  "type": "module",
+  "description": "Session Controller adapter for React and session-scoped slots (modified by dsh-session-split)",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-api-remote-access",
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ],
+      "platform": "web"
+    }
+  }
+}

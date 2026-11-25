@@ -1,0 +1,28 @@
+name: Verify package
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify committed artifacts
+        run: npm run verify
+      - name: Check whitespace
+        run: git show --format= --check HEAD
+      - name: Pack release artifact
+        run: npm run pack:release
+      - name: Verify extracted package
+        run: |
+          mkdir -p .build/ci-extracted
+          tar -xzf dist/local-dsh-session-split-*.tgz -C .build/ci-extracted
+          node .build/ci-extracted/package/scripts/verify.mjs

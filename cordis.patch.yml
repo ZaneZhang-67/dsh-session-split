@@ -1,0 +1,15 @@
+- id: ui-session
+  disabled: true
+- id: ui-workspace
+  disabled: true
+- id: ui-conversation
+  disabled: true
+- id: dsh-split-panes
+  disabled: true
+- insert:
+    - id: local-split-ui-session
+      name: ./modules/ui-session/lib/index.js
+    - id: local-split-ui-workspace
+      name: ./modules/ui-workspace/lib/index.js
+    - id: local-split-ui-conversation
+      name: ./modules/ui-conversation/lib/index.js

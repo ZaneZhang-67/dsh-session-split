@@ -1,0 +1,11 @@
+{
+  "modules/ui-session/lib/index.js": "86697fb35c36abc9dc10acb651e43a61106198df89ca1a0a7c4eb5026f316d4c",
+  "modules/ui-session/lib/client.js": "be3013a3c55cbffdb4086ba19f1c72d15074c0c06e58bf107ea42880d68dc24b",
+  "modules/ui-session/lib/client.js.map": "de699a1ae0f410a0ae54d02a66624506004cb8b1234dfc3b1991e812940d2bcc",
+  "modules/ui-workspace/lib/index.js": "e6cdc4b725585354102a5c4598c9d8c79d6abac62d7979c09919821716370438",
+  "modules/ui-workspace/lib/client.js": "012ecbb34f99e99cbc5f1ab98fd4ff6749c8e4e99cef6f689ebd1202cb9f956d",
+  "modules/ui-workspace/lib/client.js.map": "b68fd8d44d5589a40f486bc958b7c27b1ba4cbd684282a92acc1e52b187ca389",
+  "modules/ui-conversation/lib/index.js": "cf4164ca735f63a53bd3b69242fbcff732477c6386502a4b092b9e65854b65e8",
+  "modules/ui-conversation/lib/client.js": "15de3bd3d8bbee7d7e0d4dc16105762bb220114a85adc7642a289f98ad147d4c",
+  "modules/ui-conversation/lib/client.js.map": "f7458367b8f3d34b8e3485deae656494e9b43d5680a0d427e17650b056d94978"
+}

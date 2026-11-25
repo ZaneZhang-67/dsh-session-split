@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/deepseek-ai/deepseek-harness.git",
+  "version": "0.2.2-rc.5",
+  "commit": "9c2670d3bce5275e0d1610272958121af87787bb",
+  "license": "MIT",
+  "modules": ["ui-session", "ui-workspace", "ui-conversation"],
+  "patch": "patches/dsh-0.2.2-rc.5.patch"
+}
