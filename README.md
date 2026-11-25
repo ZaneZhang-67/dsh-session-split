@@ -4,6 +4,35 @@
 
 这是独立社区插件，包含三个经过修改的 DSH 原生 UI 模块，不是 DeepSeek 官方发布。上游和打包依赖的许可证保留在 [LICENSE](<LICENSE>) 与 [第三方声明](<THIRD_PARTY_NOTICES.md>) 中。
 
+## 下载与快速安装
+
+**[下载 v0.1.1 安装包（.tgz）](<https://github.com/ZaneZhang-67/dsh-session-split/releases/download/v0.1.1/local-dsh-session-split-0.1.1.tgz>)** · [版本说明](<https://github.com/ZaneZhang-67/dsh-session-split/releases/tag/v0.1.1>) · [SHA-256 校验文件](<https://github.com/ZaneZhang-67/dsh-session-split/releases/download/v0.1.1/local-dsh-session-split-0.1.1.tgz.sha256>)
+
+### 方式一：复制给 DSH 安装（推荐）
+
+在 **DSH Desktop 0.2.2-rc.5** 中新建一个会话，复制下面整段消息发送。安装包已包含运行产物，不需要先下载源码或自行编译。
+
+```text
+请通过插件管理器安装会话分栏插件：
+https://github.com/ZaneZhang-67/dsh-session-split/releases/download/v0.1.1/local-dsh-session-split-0.1.1.tgz
+
+先确认 DSH 版本为 0.2.2-rc.5，记录并暂停 include:client-hmr，再安装上述 URL。
+保持旧 @dsh-external/dsh-split-panes 停用。
+安装完成后，提示我完全退出并重新打开 DSH；不要主动退出应用或结束会话。
+等我确认双栏和输入框正常，再恢复 include:client-hmr 原来的启用状态，并提示再次完整重载。
+使用插件管理器操作，不直接编辑 profile 配置或修改 app.asar。
+```
+
+安装后按提示重开应用：macOS 用 `⌘Q` 完全退出，不是点击红色关闭按钮。保存未发送附件，待需要保留的运行中任务结束后再退出。
+
+### 方式二：下载后安装
+
+1. 点击上方 **下载 v0.1.1 安装包**，保留 `.tgz` 文件，不用解压。
+2. 在 DSH 中发送：`请按本插件 README 的冷加载步骤，通过插件管理器安装本地文件 [安装包绝对路径]`，把方括号内容替换成下载文件的真实路径。
+3. 按 [安装与升级](<#安装与升级>) 的顺序重开应用并恢复热更新。
+
+本包通过 GitHub Release 分发，没有发布到 npm；安装时使用 Release URL 或本地 `.tgz` 路径，不把 `@local/dsh-session-split` 当作 npm 包名搜索。
+
 ## 功能
 
 - 左右双栏，支持不同工作区的会话。
